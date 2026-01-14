@@ -1,51 +1,13 @@
-# ENGIN-V: Edge-Native Genomic Information Normalizer
+# ENGIN: Edge-Native Genomic Inspection Node
 **Version:** 1.0.0-Beta
 **Lead Developer:** Aravind Suresh (AMRSB)
-**Core Logic:** Python / C++ Stream Processing
+**Architecture:** Python Stream-Processing (Client-Server)
 
 
 
-## 🧬 Executive Summary
-**ENGIN-V** is an edge-computing utility designed to filter genomic sequencing data in real-time. By acting as a "Bio-Firewall" between the DNA sequencer and the storage network, it solves the critical issue of data redundancy.
+## 🧬 Project Abstract
+**ENGIN** is a specialized real-time filtration protocol for DNA sequencing pipelines. Acting as a "Genomic Firewall," it sits between the sequencer and the storage infrastructure to perform **Deep Packet Inspection** on biological data.
 
-The system utilizes a **Negative Selection Algorithm** to perform real-time host-subtraction, automatically discarding "Normal" Human reads while preserving high-value pathogens and variants. This results in **>90% storage reduction** and cleaner datasets for downstream analysis.
+**The Problem:** Clinical sequencing generates massive amounts of non-informative "Host" data (e.g., 99% Human background in an infection sample), clogging bandwidth and storage.
 
----
-
-## 🚀 Core Features
-
-### 1. Real-Time Filtration (The ENGIN)
-Unlike standard tools that process static files, ENGIN-V intercepts the FASTQ stream at the source (Simulated via USB/Network interface).
-* **Logic:** Deep Packet Inspection (DPI) for genomic reads.
-* **Mechanism:** Checks incoming reads against a local "Host Reference" (Blocklist).
-* **Result:** Matches are dropped instantly. Non-matches (Pathogens/Mutations) are passed to storage.
-
-### 2. Data Minimization
-Designed to meet **GDPR Article 5** requirements by ensuring that sensitive, non-diagnostic human DNA is never stored on the cloud.
-
----
-
-## 🛠️ Technical Architecture (PoC Simulation)
-Since physical access to Illumina sequencers is restricted, this repository uses a "Digital Twin" architecture:
-
-| Component | Simulation Substitute | Role |
-| :--- | :--- | :--- |
-| **Sequencer** | Android Device (Termux) | Generates and streams raw FASTQ reads. |
-| **Connection** | USB Tethering | Simulates the high-speed hardware link. |
-| **Edge Node** | Workstation (Python) | Runs the filtration algorithm and saves output. |
-
----
-
-## 📂 Repository Structure
-```text
-ENGIN-V/
-├── core_logic/
-│   ├── engin_filter.py      # Main filtration script
-│   └── host_loader.py       # Reference database handler
-│
-├── simulation/
-│   ├── sequencer_sim.py     # Generates synthetic read streams
-│   └── sample_gen.py        # Creates mixed Human/Pathogen samples
-│
-└── docs/
-    └── BENCHMARKS.md        # Storage savings log
+**The Solution:** ENGIN utilizes a **Negative Selection Algorithm** to intercept raw FASTQ reads at the source. It automatically identifies and discards known Host reads while preserving Pathogen and Variant data, achieving **>90% Data Minimization** before the data ever touches the disk.
