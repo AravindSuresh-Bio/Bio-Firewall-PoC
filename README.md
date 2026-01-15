@@ -14,6 +14,15 @@ ENGIN utilizes a **Negative Selection Algorithm** to intercept raw FASTQ reads a
 
 ---
 
+## ⚡ Quick Start (Demo)
+
+**Watch the ENGIN Protocol in action (Real-time Stream Filtration):**
+
+<video src="https://github.com/user-attachments/assets/c4d4dcb6-ef17-44bf-ae76-d3765d88d0bd" controls="controls" style="max-width: 100%;">
+</video>
+
+*(If the video player does not load above, [click here to watch the raw demo](https://github.com/user-attachments/assets/c4d4dcb6-ef17-44bf-ae76-d3765d88d0bd))*
+
 ## 🚀 Key Capabilities
 
 ### 1. Real-Time "Bio-Firewall"
