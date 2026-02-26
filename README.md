@@ -10,7 +10,7 @@
 Clinical sequencing generates massive amounts of non-informative "Host" data (e.g., 99% Human background DNA in an infection sample), which clogs network bandwidth and incurs huge cloud storage costs.
 
 **The Solution:**
-ENGIN utilizes a **Negative Selection Algorithm** to intercept raw FASTQ reads at the source (the Edge). It automatically identifies and discards known Host reads while preserving Pathogen and Variant data. This results in **>90% Data Minimization** before the data ever touches the disk, ensuring faster downstream analysis and inherent GDPR compliance.
+ENGIN utilizes a **Negative Selection Algorithm** to intercept raw FASTQ reads at the source (the Edge). It automatically identifies and discards known Host reads while preserving Pathogen and Variant data. This results in **>90% Data Minimization** before the data ever touches the disk, ensuring faster downstream analysis.
 
 ---
 
