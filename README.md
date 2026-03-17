@@ -36,9 +36,6 @@ By discarding the "Normal" background noise, ENGIN reduces storage requirements 
 * **Benchmark:** >90% reduction in file size for metagenomic samples.
 * **Cost Impact:** Directly reduces AWS S3 / Azure Blob storage costs for clinical labs.
 
-### 3. GDPR Compliance by Design
-Sensitive human genetic data is filtered and discarded at the hardware edge. It never leaves the local device, ensuring patient privacy is mathematically preserved.
-
 ---
 
 ## ☁️ Cloud Validation Strategy
